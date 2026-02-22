@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+/* カスタムテーマ設定 */
+@theme {
+  --color-orange-accent: #F97316;
+  --color-orange-light: #FFF7ED;
+  --color-orange-dark: #EA580C;
+  --color-gray-text: #374151;
+  --color-gray-sub: #6B7280;
+  --color-gray-border: #E5E7EB;
+  --color-gray-bg: #F9FAFB;
+}
+
+/* スムーズスクロール */
+html {
+  scroll-behavior: smooth;
+}
+
+/* セクション間のスクロールオフセット */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* フェードインアニメーション */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* スキルバーのアニメーション */
+@keyframes skillBar {
+  from {
+    width: 0%;
+  }
+}
+
+.animate-skill-bar {
+  animation: skillBar 1s ease-out forwards;
+}
