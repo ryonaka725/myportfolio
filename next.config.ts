@@ -11,6 +11,9 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   basePath: isGithubActions ? `/${repositoryName}` : "",
   assetPrefix: isGithubActions ? `/${repositoryName}/` : "",
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isGithubActions ? `/${repositoryName}` : "",
+  },
 };
 
 export default nextConfig;

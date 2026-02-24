@@ -7,6 +7,8 @@ type PortfolioItem = {
   imageSrc?: string;
 };
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 /** ポートフォリオ作品データ（テスト用） */
 const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
@@ -15,21 +17,21 @@ const PORTFOLIO_ITEMS: PortfolioItem[] = [
       "架空のカフェのWebサイトです。温かみのあるデザインで、メニューや店舗情報を分かりやすく伝えます。",
     tags: ["HTML", "CSS", "JS"],
     url: "https://comorebi-cafe.netlify.app/",
-    imageSrc: "/images/cafesite.svg",
+    imageSrc: `${basePath}/images/cafesite.svg`,
   },
   {
     title: "清掃業のコーポレートサイト",
     description: "架空の清掃業者のwebサイトです。",
     tags: ["Next.js", "TypeScript", "SEO対策"],
     url: "https://cleanclean-website.netlify.app/",
-    imageSrc: "/images/cleaningsite.svg",
+    imageSrc: `${basePath}/images/cleaningsite.svg`,
   },
   {
     title: "スポーツジムサンプルサイト",
     description: "架空のスポーツジムのWEBサイトです。",
     tags: ["Next.js", "Tailwind CSS", "アクセシビリティ"],
     url: "https://sometimefitness-samplesite.netlify.app/",
-    imageSrc: "/images/fitnessgymsite.svg",
+    imageSrc: `${basePath}/images/fitnessgymsite.svg`,
   },
 ];
 
