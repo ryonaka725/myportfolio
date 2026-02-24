@@ -21,7 +21,7 @@ export default function AboutSection() {
           <div className="md:col-span-2 flex justify-center">
             <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg">
               <Image
-                src={`${basePath}/images/itsme.svg`}
+                src={`${basePath}/images/itsme.PNG`}
                 alt="Ryo Nakajimaのプロフィール写真"
                 width={192}
                 height={192}
