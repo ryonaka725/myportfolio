@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-label="Cafe site placeholder">
+  <rect width="800" height="480" fill="#fff7ed" />
+  <rect x="32" y="32" width="736" height="56" rx="8" fill="#fdba74" />
+  <rect x="32" y="112" width="460" height="320" rx="10" fill="#fed7aa" />
+  <rect x="516" y="112" width="252" height="152" rx="10" fill="#ffedd5" />
+  <rect x="516" y="280" width="252" height="152" rx="10" fill="#ffedd5" />
+</svg>
